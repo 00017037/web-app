@@ -30,7 +30,7 @@ app.set("view engine", "pug");
 app.use("/users", userRoutes);
 
 app.use("/", (req, res) => {
-  res.send("incorrect page url");
+  res.redirect('/users');
 });
 
 app.listen(process.env.PORT, () => {
