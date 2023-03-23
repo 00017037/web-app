@@ -31,7 +31,7 @@
   margin-bottom: 20px;
 }
 
-.add-user-form button {
+.add-user-form button,.update-button {
   padding: 10px 20px;
   background-color: #3498db;
   color: #fff;
@@ -41,6 +41,7 @@
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
+
 
 .add-user-form button:hover {
   background-color: #2980b9;

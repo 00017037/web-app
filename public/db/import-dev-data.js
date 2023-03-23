@@ -7,8 +7,6 @@ import process from 'process'
 dotenv.config({path:'./config.env'})
 
 const DB = process.env.DB
-console.log(process.env.DB)
-console.log(process.env.PORT,'port')
 console.log(DB)
 mongoose.connect(DB, {useNewUrlParser: true,
     useUnifiedTopology:true

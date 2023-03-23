@@ -26,15 +26,15 @@ html
               td= user.address
               td= user.course
               td 
-                form(action=`/edit/${user.id}`, method="post")
+                form.edit-form(action=`/users/edit-form/${user.id}`, method="post")
                   button.edit(type='submit') Edit 
-              td 
-                button(type='submit',onclick=`deleteUser(${user.id})`) Delete
+              td.delete-cell
+                button.delete(type='submit',onclick=`deleteStudent('${user.id}')`) Delete
                 
-      a.add(href='/users/add-student') Add new student
+      a.add(href='/users/add-form') Add new student
 
 script.
-  function deleteUser(userId) {
+  function deleteStudent(userId) {
     if (confirm('Are you sure you want to delete this user?')) {
       fetch(`/users/${userId}`, {
         method: 'DELETE',
