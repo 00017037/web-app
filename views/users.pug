@@ -5,6 +5,7 @@ html
   body
     .container
       h1 User List
+      
       if successMessage
          .success-message
          p= successMessage
@@ -32,6 +33,7 @@ html
                 button.delete(type='submit',onclick=`deleteStudent('${user.id}')`) Delete
                 
       a.add(href='/users/add-form') Add new student
+      h2 This web application was created to fulfill Web Technology modules requirements and does not represent an actual company or service
 
 script.
   function deleteStudent(userId) {
