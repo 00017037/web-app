@@ -1,0 +1,49 @@
+html
+  head
+    title Add User Form
+    link(rel='stylesheet', href='/styles/add-user.css')
+
+  body
+    .container
+      form.add-user-form
+        h2 Update User
+        label(for='name') Name
+        input#name(type='text', name='name', placeholder='Enter name', value=`${user.name}`,required)
+        label(for='email') Email
+        input#email(type='email', name='email', placeholder='Enter email', value=`${user.email}`, required )
+        label(for='address') Address
+        input#address(type='text', name='address', placeholder='Enter address', value=`${user.address}`, required)
+        label(for='course') Course
+        input#course(type='text', name='course', placeholder='Enter course', value=`${user.course}`, required)
+      button.update-button(type='submit' onclick=`updateUser('${user.id}')`) Update User
+script.
+  function updateUser(userId) {
+    console
+    if (confirm('Are you sure you want to update this user?')) {
+      const form = document.querySelector('.add-user-form');
+    const name = form.querySelector('#name').value;
+    const email = form.querySelector('#email').value;
+    const address = form.querySelector('#address').value;
+    const course = form.querySelector('#course').value;
+    const body = { name, email, address, course };
+     fetch(`/users/${userId}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    })
+      .then(response => {
+        if (response.ok) {
+          alert('Successfully updated')
+          location.href='/users';
+        } else {
+          alert('Error Updating user');
+        }
+      })
+      .catch(error => {
+        console.error('Error updating user', error);
+        alert('Error updating user');
+      });
+    }
+  }

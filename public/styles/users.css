@@ -1,0 +1,203 @@
+/* Set max width of page */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: Arial, sans-serif;
+
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+form{
+  margin: 0;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style the input fields */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Style the buttons */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Define headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+h5 {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+h6 {
+  font-size: 10px;
+  margin-top: 0;
+}
+
+/* Define regular text */
+p,
+span {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center
+}
+
+th {
+  background-color: #ddd;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions a {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.edit {
+  background-color: #ffc107;
+  margin: 0 auto;
+}
+
+.delete {
+  background-color: #dc3545;
+  margin: 0 auto;
+}
+
+.add {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+.success-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.edit-form,.delete-cell {
+  display: flex;
+}

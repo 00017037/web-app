@@ -1,0 +1,18 @@
+html
+  head
+    title Add User Form
+    link(rel='stylesheet', href='/styles/add-user.css')
+
+  body
+    .container
+      form.add-user-form(action='/users', method='POST')
+        h2 Add New User
+        label(for='name') Name
+        input#name(type='text', name='name', placeholder='Enter name', required)
+        label(for='email') Email
+        input#email(type='email', name='email', placeholder='Enter email', required )
+        label(for='address') Address
+        input#address(type='text', name='address', placeholder='Enter address', required)
+        label(for='course') Course
+        input#course(type='text', name='course', placeholder='Enter course', required)
+        button(type='submit') Add User
