@@ -18,4 +18,4 @@ This is the application for monitoring,updaing ,adding and deleting(CRUD operati
 
 ## Links
 * https://github.com/00017037/web-app - link to the github
-* https://cw2-00017037.onrender.com/users - link to the project deploy
+* https://cw2-00017037.onrender.com/users - link to the project deploy(I have used 'render' hosting platform, since gh-pages doesnt provide hosting for node applications)
