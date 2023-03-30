@@ -31,7 +31,7 @@ export const getUserById = async (req, res, next) => {
 export const deleteUser =  async (req, res,next) => {
   const id = req.params.id;
   await User.findByIdAndDelete(id);
-  res.redirect('/users')
+  res.status(201).send('success')
 };
 
 export const addUserForm = (req,res)=>{
@@ -68,7 +68,7 @@ export const updateUser = async (req,res) => {
     new:true,
     runValidators:true
   })
-  res.redirect('/users')
+  res.status(200).send(updatedUser);
 
   
 }
