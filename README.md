@@ -5,6 +5,7 @@ This is the application for monitoring,updaing ,adding and deleting(CRUD operati
 ## Insturctuios how to run the app
 1. npm install (installing all node dependencies)
 2. npm run start (start the app in production mode)
+3. open  http://localhost:5000/users to see in the browser
 
 ## Dependency list
 * "@types/express": "^4.17.17",
