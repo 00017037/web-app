@@ -1,6 +1,6 @@
 import bodyParser from "body-parser";
 import express from "express";
-import userRoutes from "./routes/students.js";
+import userRoutes from "./routes/users.js";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 import dotenv from 'dotenv'
